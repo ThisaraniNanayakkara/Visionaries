@@ -7,7 +7,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-//import com.mad2021.sethsaha.database.DBHelper;
+
 
 public class Login extends AppCompatActivity {
 
