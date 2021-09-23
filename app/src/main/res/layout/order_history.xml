@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sub_total"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".order_history">
+
+    <Button
+        android:id="@+id/cart_checkout2"
+        android:layout_width="272dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/home"
+        app:backgroundTint="@color/top_tab_color"
+        app:layout_constraintBottom_toTopOf="@+id/bar_btm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/bar_btm"
+        android:layout_width="394dp"
+        android:layout_height="63dp"
+        android:background="@color/top_tab_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/bar_top"
+        android:layout_width="394dp"
+        android:layout_height="63dp"
+        android:background="@color/top_tab_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/im_menu"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/bar_search"
+        app:layout_constraintHorizontal_bias="0.586"
+        app:layout_constraintStart_toStartOf="@+id/bar_top"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu2" />
+
+    <ImageView
+        android:id="@+id/btn_notification"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintEnd_toEndOf="@+id/bar_top"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/notification" />
+
+    <EditText
+        android:id="@+id/bar_search"
+        android:layout_width="210dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/roundstyle"
+        android:ems="10"
+        android:gravity="center"
+        android:hapticFeedbackEnabled="false"
+        android:hint="@string/btn_searches"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.338"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_search"
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/bar_search"
+        app:layout_constraintHorizontal_bias="0.973"
+        app:layout_constraintStart_toStartOf="@+id/bar_search"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/search" />
+
+    <ImageView
+        android:id="@+id/img_cart"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/bar_top"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btn_notification"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cart" />
+
+    <ImageView
+        android:id="@+id/btn_home"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/img_cart_btm"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bar_btm"
+        app:layout_constraintStart_toEndOf="@+id/btn_home"
+        app:srcCompat="@drawable/cart" />
+
+    <ImageView
+        android:id="@+id/btn_prescription"
+        android:layout_width="38dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_cart_btm"
+        app:layout_constraintTop_toTopOf="@+id/bar_btm"
+        app:layout_constraintVertical_bias="0.285"
+        app:srcCompat="@drawable/prescription" />
+
+    <ImageView
+        android:id="@+id/btn_user"
+        android:layout_width="38dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/bar_btm"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btn_prescription"
+        app:layout_constraintTop_toTopOf="@+id/bar_btm"
+        app:layout_constraintVertical_bias="0.6"
+        app:srcCompat="@drawable/user" />
+
+    <TextView
+        android:id="@+id/cpayment_title"
+        android:layout_width="289dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/baloo_bhaina"
+        android:gravity="center"
+        android:text="@string/order_history"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bar_top" />
+
+    <TableLayout
+        android:layout_width="381dp"
+        android:layout_height="402dp"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cpayment_title">
+
+        <TableRow
+
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/order_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#F4F1F1"
+                android:text="Order Number"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/item"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#F4F1F1"
+                android:text="Item"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#F4F1F1"
+                android:text="Date"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/Amount"
+                android:layout_width="84dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#F4F1F1"
+                android:text="Amount"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:background="#DAE8FC"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="14527826"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mens Multi"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="25/10/2020"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="450"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:background="#DAE8FC"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="14527826"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mens Multi"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="25/10/2020"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="450"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:background="#DAE8FC"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="14527826"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mens Multi"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="25/10/2020"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="450"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:background="#DAE8FC"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="14527826"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mens Multi"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="25/10/2020"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="450"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:background="#DAE8FC"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="14527826"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mens Multi"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="25/10/2020"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="450"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:background="#DAE8FC"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="14527826"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mens Multi"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="25/10/2020"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="450"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:background="#DAE8FC"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="14527826"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mens Multi"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="25/10/2020"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="450"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:background="#DAE8FC"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="14527826"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mens Multi"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="25/10/2020"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="450"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:background="#DAE8FC"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="14527826"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mens Multi"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="25/10/2020"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="450"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:background="#DAE8FC"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="14527826"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mens Multi"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="25/10/2020"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="450"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:background="#DAE8FC"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="14527826"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mens Multi"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="25/10/2020"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="450"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:background="#DAE8FC"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="14527826"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mens Multi"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="25/10/2020"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="450"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:background="#DAE8FC"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="14527826"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mens Multi"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="25/10/2020"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="450"
+                android:textAlignment="center" />
+        </TableRow>
+
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sub_total"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cart">
+
+    <TextView
+        android:id="@+id/bar_btm"
+        android:layout_width="394dp"
+        android:layout_height="63dp"
+        android:background="@color/top_tab_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/bar_top"
+        android:layout_width="394dp"
+        android:layout_height="63dp"
+        android:background="@color/top_tab_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/im_menu"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/bar_search"
+        app:layout_constraintHorizontal_bias="0.586"
+        app:layout_constraintStart_toStartOf="@+id/bar_top"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu2" />
+
+    <ImageView
+        android:id="@+id/btn_notification"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintEnd_toEndOf="@+id/bar_top"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/notification" />
+
+    <EditText
+        android:id="@+id/bar_search"
+        android:layout_width="210dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/roundstyle"
+        android:ems="10"
+        android:gravity="center"
+        android:hapticFeedbackEnabled="false"
+        android:hint="@string/btn_searches"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.338"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_search"
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/bar_search"
+        app:layout_constraintHorizontal_bias="0.973"
+        app:layout_constraintStart_toStartOf="@+id/bar_search"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/search" />
+
+    <ImageView
+        android:id="@+id/img_cart"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/bar_top"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btn_notification"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cart" />
+
+    <ImageView
+        android:id="@+id/btn_home"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/img_cart_btm"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bar_btm"
+        app:layout_constraintStart_toEndOf="@+id/btn_home"
+        app:srcCompat="@drawable/cart" />
+
+    <ImageView
+        android:id="@+id/btn_prescription"
+        android:layout_width="38dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_cart_btm"
+        app:layout_constraintTop_toTopOf="@+id/bar_btm"
+        app:layout_constraintVertical_bias="0.285"
+        app:srcCompat="@drawable/prescription" />
+
+    <ImageView
+        android:id="@+id/btn_user"
+        android:layout_width="38dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/bar_btm"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btn_prescription"
+        app:layout_constraintTop_toTopOf="@+id/bar_btm"
+        app:layout_constraintVertical_bias="0.6"
+        app:srcCompat="@drawable/user" />
+
+    <TextView
+        android:id="@+id/cpayment_title"
+        android:layout_width="57dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/baloo_bhaina"
+        android:text="@string/text_title"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bar_top"
+        app:layout_constraintVertical_bias="0.645" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="368dp"
+        android:layout_height="266dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/boxstyle"
+        app:layout_constraintBottom_toTopOf="@+id/bar_btm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bar_top"
+        app:layout_constraintVertical_bias="0.169">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/p1_bin"
+                android:layout_width="39dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="60dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.597"
+                app:layout_constraintStart_toEndOf="@+id/p1_minus"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/trash" />
+
+            <ImageView
+                android:id="@+id/p1_bin2"
+                android:layout_width="39dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="88dp"
+                app:layout_constraintStart_toEndOf="@+id/num_qty2"
+                app:layout_constraintTop_toBottomOf="@+id/p1_bin"
+                app:srcCompat="@drawable/trash" />
+
+            <ImageView
+                android:id="@+id/p1_bin3"
+                android:layout_width="39dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="96dp"
+                app:layout_constraintStart_toEndOf="@+id/num_qty3"
+                app:layout_constraintTop_toBottomOf="@+id/p1_bin2"
+                app:srcCompat="@drawable/trash" />
+
+            <TextView
+                android:id="@+id/text_qty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="56dp"
+                android:text="@string/Quantity"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/img_nappy"
+                app:layout_constraintTop_toTopOf="@+id/img_nappy" />
+
+            <TextView
+                android:id="@+id/text_qty2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="48dp"
+                android:text="@string/Quantity"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/imageView12"
+                app:layout_constraintTop_toTopOf="@+id/imageView12" />
+
+            <TextView
+                android:id="@+id/text_qty3"
+                android:layout_width="25dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="40dp"
+                android:text="@string/Quantity"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/imageView13"
+                app:layout_constraintTop_toTopOf="@+id/imageView13" />
+
+            <ImageView
+                android:id="@+id/img_nappy"
+                android:layout_width="123dp"
+                android:layout_height="127dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/baby" />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="95dp"
+                android:layout_height="101dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView12"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/multi" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="106dp"
+                android:layout_height="116dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_nappy"
+                app:srcCompat="@drawable/facia2" />
+
+            <EditText
+                android:id="@+id/num_qty"
+                android:layout_width="57dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="44dp"
+                android:background="@drawable/qnty_style"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/qty_p1"
+                android:inputType="number"
+                android:textColor="#100F0F"
+                android:textColorHint="#131212"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/img_nappy"
+                app:layout_constraintStart_toEndOf="@+id/text_qty"
+                app:layout_constraintTop_toTopOf="@+id/img_nappy"
+                app:layout_constraintVertical_bias="0.465" />
+
+            <EditText
+                android:id="@+id/num_qty2"
+                android:layout_width="57dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/qnty_style"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/p2_hint"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textColorHint="#131212"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+                app:layout_constraintStart_toEndOf="@+id/text_qty2"
+                app:layout_constraintTop_toBottomOf="@+id/img_nappy"
+                app:layout_constraintVertical_bias="0.469" />
+
+            <EditText
+                android:id="@+id/num_qty3"
+                android:layout_width="57dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/qnty_style"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/p3_hint"
+                android:inputType="number"
+                android:textColorHint="#0E0D0D"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView13"
+                app:layout_constraintStart_toEndOf="@+id/text_qty3"
+                app:layout_constraintTop_toTopOf="@+id/imageView13"
+                app:layout_constraintVertical_bias="0.869" />
+
+            <ImageView
+                android:id="@+id/p1_plus"
+                android:layout_width="33dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="56dp"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintBottom_toTopOf="@+id/num_qty"
+                app:layout_constraintStart_toEndOf="@+id/text_qty"
+                app:srcCompat="@drawable/plus" />
+
+            <ImageView
+                android:id="@+id/p1_minus"
+                android:layout_width="33dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toEndOf="@+id/text_qty"
+                app:layout_constraintTop_toBottomOf="@+id/num_qty"
+                app:srcCompat="@drawable/minus" />
+
+            <ImageView
+                android:id="@+id/p2_plus"
+                android:layout_width="33dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="56dp"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintBottom_toTopOf="@+id/num_qty2"
+                app:layout_constraintStart_toEndOf="@+id/text_qty2"
+                app:srcCompat="@drawable/plus" />
+
+            <ImageView
+                android:id="@+id/p3_plus"
+                android:layout_width="33dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="92dp"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintBottom_toTopOf="@+id/num_qty3"
+                app:layout_constraintStart_toEndOf="@+id/imageView13"
+                app:srcCompat="@drawable/plus" />
+
+            <ImageView
+                android:id="@+id/p2_minus"
+                android:layout_width="29dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintEnd_toEndOf="@+id/num_qty2"
+                app:layout_constraintTop_toBottomOf="@+id/text_qty2"
+                app:srcCompat="@drawable/minus" />
+
+            <ImageView
+                android:id="@+id/p3_minus"
+                android:layout_width="33dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="@+id/text_qty3"
+                app:layout_constraintTop_toBottomOf="@+id/num_qty3"
+                app:srcCompat="@drawable/minus" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/subtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/subtotal"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/bar_btm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollview"
+        app:layout_constraintVertical_bias="0.135" />
+
+    <TextView
+        android:id="@+id/grand_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/grandtotal"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/bar_btm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollview"
+        app:layout_constraintVertical_bias="0.358" />
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="59dp"
+        android:layout_height="17dp"
+        android:background="@null"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Rs. 560"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/subtotal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toEndOf="@+id/subtotal" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="63dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="96dp"
+        android:background="@null"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Rs. 560"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/grand_total"
+        app:layout_constraintStart_toEndOf="@+id/grand_total" />
+
+    <Button
+        android:id="@+id/cart_checkout"
+        android:layout_width="272dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/back"
+        app:backgroundTint="@color/top_tab_color"
+        app:layout_constraintBottom_toTopOf="@+id/bar_btm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/cart_back"
+        android:layout_width="272dp"
+        android:layout_height="50dp"
+        android:text="@string/checkout"
+        app:backgroundTint="@color/top_tab_color"
+        app:layout_constraintBottom_toTopOf="@+id/cart_checkout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
