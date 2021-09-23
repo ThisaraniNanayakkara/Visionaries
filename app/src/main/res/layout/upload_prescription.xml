@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:backgroundTint="#00A4D2"
+    tools:context=".UploadPrescription">
+
+
+
+
+        <TextView
+            android:id="@+id/bar_btm"
+            android:layout_width="392dp"
+            android:layout_height="59dp"
+            android:background="#00A4D2"
+            android:backgroundTint="#01A4D2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.058"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/bar_top"
+            android:layout_width="393dp"
+            android:layout_height="69dp"
+            android:background="#00A4D2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/im_menu"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="48dp"
+            android:contentDescription="@string/im_menu"
+            app:layout_constraintEnd_toStartOf="@+id/bar_search8"
+            app:layout_constraintHorizontal_bias="0.586"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/menu2" />
+
+        <EditText
+            android:id="@+id/bar_search8"
+            android:layout_width="210dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#00a4d2"
+            android:ems="10"
+            android:gravity="center"
+            android:hapticFeedbackEnabled="false"
+            android:hint="@string/bar_search"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.612"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/btn_home1"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="@string/btn_home"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/btn_user1"
+            android:layout_width="38dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/btn_user"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_prescription1"
+            app:srcCompat="@drawable/user" />
+
+        <ImageView
+            android:id="@+id/btn_prescription1"
+            android:layout_width="38dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/btn_prescription"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/img_cart_btm1"
+            app:srcCompat="@drawable/prescription" />
+
+        <ImageView
+            android:id="@+id/img_cart_btm1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/img_cart_btm"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_home1"
+            app:srcCompat="@drawable/cart" />
+
+        <EditText
+            android:id="@+id/product_name2"
+            android:layout_width="164dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="48dp"
+            android:backgroundTint="#000000"
+            android:ems="10"
+            android:foregroundTint="#A8A0A0"
+            android:gravity="start|top"
+            android:hint="@string/product_name2"
+            android:inputType="textMultiLine"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/pills"
+            app:layout_constraintTop_toBottomOf="@+id/bar_top" />
+
+        <EditText
+            android:id="@+id/no_access"
+            android:layout_width="244dp"
+            android:layout_height="86dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#000000"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/no_access"
+            android:inputType="textMultiLine"
+            android:outlineProvider="background"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pills" />
+
+        <EditText
+            android:id="@+id/no_access1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="48dp"
+            android:backgroundTint="#000000"
+            android:ems="10"
+            android:hint="@string/no_access1"
+            android:inputType="textMultiLine"
+            android:outlineProvider="background"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/btn_upload"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btn_upload"
+            android:layout_width="129dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginBottom="48dp"
+            android:background="#FDFFFF"
+            android:backgroundTint="#000000"
+            android:text="@string/btn_upload"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/bar_btm"
+            app:layout_constraintStart_toStartOf="@+id/no_access1" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="82dp"
+            android:layout_height="118dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginBottom="48dp"
+            app:layout_constraintBottom_toTopOf="@+id/no_access1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/no_access"
+            app:srcCompat="@drawable/image" />
+
+        <ImageView
+            android:id="@+id/pills"
+            android:layout_width="141dp"
+            android:layout_height="108dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:contentDescription="@string/pills"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bar_top"
+            app:srcCompat="@drawable/metformin" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

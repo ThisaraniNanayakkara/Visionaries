@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:backgroundTint="#00A4D2"
+    tools:context=".ProfileSettings">
+
+
+        <TextView
+            android:id="@+id/bar_btm"
+            android:layout_width="415dp"
+            android:layout_height="57dp"
+            android:background="#00A4D2"
+            android:backgroundTint="#01A4D2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.058"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/bar_top"
+            android:layout_width="390dp"
+            android:layout_height="57dp"
+            android:background="#00A4D2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.043"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/im_menu"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="48dp"
+            android:contentDescription="@string/im_menu"
+            app:layout_constraintEnd_toStartOf="@+id/bar_search8"
+            app:layout_constraintHorizontal_bias="0.586"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/menu2" />
+
+        <EditText
+            android:id="@+id/bar_search8"
+            android:layout_width="242dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#00a4d2"
+            android:ems="10"
+            android:gravity="center"
+            android:hapticFeedbackEnabled="false"
+            android:hint="@string/bar_search7"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.612"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/btn_home1"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="@string/btn_home"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/btn_user1"
+            android:layout_width="38dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/btn_user"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_prescription1"
+            app:srcCompat="@drawable/user" />
+
+        <ImageView
+            android:id="@+id/btn_prescription1"
+            android:layout_width="38dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/btn_prescription"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/img_cart_btm1"
+            app:srcCompat="@drawable/prescription" />
+
+        <ImageView
+            android:id="@+id/img_cart_btm1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/img_cart_btm"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_home1"
+            app:srcCompat="@drawable/cart" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="213dp"
+            android:layout_height="57dp"
+            android:layout_marginBottom="40dp"
+            android:text="@string/btn_submit"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/bar_btm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.55"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/myprof"
+            android:layout_width="195dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="48dp"
+            android:text="@string/myprof"
+            android:textAlignment="center"
+            android:textColor="#00A4D2"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/imageView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bar_top"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="88dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/addpic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/image" />
+
+        <TextView
+            android:id="@+id/addpic"
+            android:layout_width="232dp"
+            android:layout_height="27dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-thin"
+            android:text="@string/addpic"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/name2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/name2"
+            android:layout_width="216dp"
+            android:layout_height="42dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="4dp"
+            android:backgroundTint="#000000"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="@string/name3"
+            app:layout_constraintBottom_toTopOf="@+id/mobile3"
+            app:layout_constraintEnd_toStartOf="@+id/b1" />
+
+        <EditText
+            android:id="@+id/mobile3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="4dp"
+            android:backgroundTint="#000000"
+            android:ems="10"
+            android:hint="@string/mobile3"
+            android:inputType="phone"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toTopOf="@+id/email3"
+            app:layout_constraintEnd_toStartOf="@+id/b3" />
+
+        <EditText
+            android:id="@+id/email3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#000000"
+            android:ems="10"
+            android:hint="@string/email3"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toTopOf="@+id/user3"
+            app:layout_constraintEnd_toStartOf="@+id/b4" />
+
+        <EditText
+            android:id="@+id/user3"
+            android:layout_width="210dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#000000"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/user3"
+            app:layout_constraintBottom_toTopOf="@+id/pass3"
+            app:layout_constraintEnd_toStartOf="@+id/b5" />
+
+        <EditText
+            android:id="@+id/pass3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="44dp"
+            android:backgroundTint="#000000"
+            android:ems="10"
+            android:hint="@string/pass3"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_submit"
+            app:layout_constraintEnd_toStartOf="@+id/b6" />
+
+        <TextView
+            android:id="@+id/b1"
+            android:layout_width="50dp"
+            android:layout_height="23dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginBottom="28dp"
+            android:text="@string/b1"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/b3"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/b3"
+            android:layout_width="54dp"
+            android:layout_height="22dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginBottom="28dp"
+            android:text="@string/b3"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/b4"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/b4"
+            android:layout_width="54dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginBottom="40dp"
+            android:text="@string/b4"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/b5"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/b5"
+            android:layout_width="54dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginBottom="44dp"
+            android:text="@string/b5"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/b6"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/b6"
+            android:layout_width="54dp"
+            android:layout_height="17dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginBottom="60dp"
+            android:text="@string/b6"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/btn_submit"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
