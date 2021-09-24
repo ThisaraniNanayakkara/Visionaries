@@ -45,4 +45,6 @@
     <string name="dental">Dental</string>
     <string name="babycare">Baby Care</string>
     <string name="popularcategories">Explore Popular Categories</string>
+    <string name="Open">btnopen</string>
+    <string name="btnopen">open</string>
 </resources>

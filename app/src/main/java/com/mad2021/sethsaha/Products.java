@@ -1,8 +1,15 @@
 package com.mad2021.sethsaha;
 
+import com.google.firebase.database.Exclude;
+
+import java.io.Serializable;
 import java.util.Date;
 
-public class Products {
+public class Products implements Serializable {
+
+
+    @Exclude
+    private String key;
     private String ID;
     private String pname;
     private int price;
@@ -67,5 +74,13 @@ public class Products {
 
     public void setDes(String des) {
         this.des = des;
+    }
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
     }
 }

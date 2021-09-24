@@ -24,24 +24,24 @@ public class EditProduct extends AppCompatActivity {
         final EditText addDes = findViewById(R.id.addDes);
         Button btn_submit = findViewById(R.id.btnsubmit);
         DAOProducts daoProducts = new DAOProducts();
-        btn_submit.setOnClickListener(v->
-        {
-            HashMap<String,Object> hashMap = new HashMap<>();
-            hashMap.put("ProductID",addPD.getText().toString());
-            hashMap.put("Productname",addPname.getText().toString());
-            hashMap.put("ProductPrice",addPrice.getText().length());
-            hashMap.put("Productweight",addWeight.getText().length());
-            hashMap.put("Expiredate",addDate.getText().length());
-            hashMap.put("Description",addDes.getText().toString());
-
-
-            daoProducts.update("-MkM0pGbo9k5FCL3XecG",hashMap).addOnSuccessListener(suc->
-            {
-                Toast.makeText(this, "Record updated", Toast.LENGTH_SHORT).show();
-            }).addOnFailureListener(er->
-            {
-                Toast.makeText(this, ""+er.getMessage(), Toast.LENGTH_SHORT).show();
-            });
-        });
+//        btn_submit.setOnClickListener(v->
+//        {
+//            HashMap<String,Object> hashMap = new HashMap<>();
+//            hashMap.put("ProductID",addPD.getText().toString());
+//            hashMap.put("Productname",addPname.getText().toString());
+//            hashMap.put("ProductPrice",addPrice.getText().length());
+//            hashMap.put("Productweight",addWeight.getText().length());
+//            hashMap.put("Expiredate",addDate.getText().length());
+//            hashMap.put("Description",addDes.getText().toString());
+//
+//
+//            daoProducts.update("-MkM0pGbo9k5FCL3XecG",hashMap).addOnSuccessListener(suc->
+//            {
+//                Toast.makeText(this, "Record updated", Toast.LENGTH_SHORT).show();
+//            }).addOnFailureListener(er->
+//            {
+//                Toast.makeText(this, ""+er.getMessage(), Toast.LENGTH_SHORT).show();
+//            });
+//        });
     }
 }

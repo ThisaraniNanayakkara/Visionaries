@@ -98,10 +98,21 @@
         android:id="@+id/btnsubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="164dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="20dp"
         android:text="@string/btnsubmit"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addDes" />
+
+    <Button
+        android:id="@+id/btnopen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="68dp"
+        android:text="@string/btnopen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnsubmit"
         app:layout_constraintTop_toBottomOf="@+id/addDes" />
 
     <TextView
