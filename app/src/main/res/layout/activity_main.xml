@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/addPD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="108dp"
@@ -30,7 +30,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView40" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/addPname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="108dp"
@@ -40,10 +40,10 @@
         android:inputType="textPersonName"
         android:minHeight="48dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+        app:layout_constraintTop_toBottomOf="@+id/addPD" />
 
     <EditText
-        android:id="@+id/editTextNumberDecimal3"
+        android:id="@+id/addPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="108dp"
@@ -53,10 +53,10 @@
         android:inputType="numberDecimal"
         android:minHeight="48dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+        app:layout_constraintTop_toBottomOf="@+id/addPname" />
 
     <EditText
-        android:id="@+id/editTextNumberDecimal4"
+        android:id="@+id/addWeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="108dp"
@@ -66,10 +66,10 @@
         android:inputType="numberDecimal"
         android:minHeight="48dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal3" />
+        app:layout_constraintTop_toBottomOf="@+id/addPrice" />
 
     <EditText
-        android:id="@+id/editTextDate2"
+        android:id="@+id/addDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="108dp"
@@ -79,10 +79,10 @@
         android:inputType="date"
         android:minHeight="48dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal4" />
+        app:layout_constraintTop_toBottomOf="@+id/addWeight" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName6"
+        android:id="@+id/addDes"
         android:layout_width="211dp"
         android:layout_height="48dp"
         android:layout_marginStart="108dp"
@@ -92,17 +92,17 @@
         android:inputType="textPersonName"
         android:minHeight="48dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDate2" />
+        app:layout_constraintTop_toBottomOf="@+id/addDate" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnsubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="164dp"
         android:layout_marginTop="4dp"
         android:text="@string/btnsubmit"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
+        app:layout_constraintTop_toBottomOf="@+id/addDes" />
 
     <TextView
         android:id="@+id/textView2"

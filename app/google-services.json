@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "748973941556",
+    "project_id": "sethsaha-aae89",
+    "storage_bucket": "sethsaha-aae89.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:748973941556:android:92cbee13b892b91fd5bb61",
+        "android_client_info": {
+          "package_name": "com.mad2021.sethsaha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "748973941556-i3oluck7ranqrb6c3fvadt0s6bah58d1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKLhBcsR-v1pUDWNbuiDWdUJkTTUXJYaU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "748973941556-i3oluck7ranqrb6c3fvadt0s6bah58d1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
