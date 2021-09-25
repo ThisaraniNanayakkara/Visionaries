@@ -6,6 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".ProductListadmin">
 
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="61dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/deletebtn"
+        android:textSize="5sp"
+        app:layout_constraintStart_toEndOf="@+id/edit_btnlist"
+        app:layout_constraintTop_toBottomOf="@+id/imageView23" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="61dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/deletebtn"
+        android:textSize="5sp"
+        app:layout_constraintStart_toEndOf="@+id/button13"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25" />
+
     <ImageView
         android:id="@+id/imageView23"
         android:layout_width="30dp"
@@ -167,14 +189,14 @@
         android:textAlignment="center"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        app:layout_constraintTop_toBottomOf="@+id/add_btn" />
 
     <ImageView
         android:id="@+id/imageView21"
         android:layout_width="30dp"
         android:layout_height="36dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="12dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView8"
         app:srcCompat="@drawable/trash" />
@@ -193,8 +215,8 @@
         android:id="@+id/imageView22"
         android:layout_width="31dp"
         android:layout_height="32dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
         app:layout_constraintStart_toEndOf="@+id/imageView21"
         app:layout_constraintTop_toBottomOf="@+id/imageView8"
         app:srcCompat="@drawable/edit" />
@@ -220,7 +242,7 @@
         app:srcCompat="@drawable/edit" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/add_btn"
         android:layout_width="245dp"
         android:layout_height="48dp"
         android:layout_marginStart="88dp"
@@ -275,7 +297,7 @@
         android:layout_marginStart="68dp"
         android:layout_marginTop="36dp"
         app:layout_constraintStart_toEndOf="@+id/imageView8"
-        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/add_btn"
         app:srcCompat="@drawable/fishoil" />
 
     <ImageView
@@ -285,7 +307,49 @@
         android:layout_marginStart="60dp"
         android:layout_marginTop="36dp"
         app:layout_constraintStart_toEndOf="@+id/imageView12"
-        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/add_btn"
         app:srcCompat="@drawable/fishoil" />
+
+    <Button
+        android:id="@+id/btn_delete_list"
+        android:layout_width="61dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/deletebtn"
+        android:textSize="5sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView21" />
+
+    <Button
+        android:id="@+id/edit_btnlist"
+        android:layout_width="61dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/Edit"
+        android:textSize="8sp"
+        app:layout_constraintStart_toEndOf="@+id/btn_delete_list"
+        app:layout_constraintTop_toBottomOf="@+id/imageView22" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="61dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/Edit"
+        android:textSize="8sp"
+        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView24" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="61dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/Edit"
+        android:textSize="8sp"
+        app:layout_constraintStart_toEndOf="@+id/button14"
+        app:layout_constraintTop_toBottomOf="@+id/imageView26" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -42,13 +42,13 @@
                 android:textSize="20sp"
                 android:layout_marginBottom="5dp"
                 android:id="@+id/txt_name"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Text"
-                android:textSize="20sp"
-                android:layout_marginBottom="5dp"
-                android:id="@+id/txt_price"/>
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Text"-->
+<!--                android:textSize="20sp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:id="@+id/txt_price"/>-->
         </LinearLayout>
     </LinearLayout>
 

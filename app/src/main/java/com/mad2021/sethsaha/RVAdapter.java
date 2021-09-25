@@ -46,6 +46,7 @@ public class RVAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         Products products = e==null? list.get(position):e;
         vh.txt_id.setText(products.getID());
         vh.txt_name.setText(products.getPname());
+//        vh.txt_price.setText(products.getPname());
         vh.txt_option.setOnClickListener(v->
         {
             PopupMenu popupMenu =new PopupMenu(context,vh.txt_option);

@@ -47,4 +47,7 @@
     <string name="popularcategories">Explore Popular Categories</string>
     <string name="Open">btnopen</string>
     <string name="btnopen">open</string>
+    <string name="Edit">edit</string>
+    <string name="delete">deletebtn</string>
+    <string name="deletebtn">delete</string>
 </resources>

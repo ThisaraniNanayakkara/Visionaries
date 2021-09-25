@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         }
         btn_submit.setOnClickListener(v->
         {
-            Products products = new Products(addPD.getText().toString(),addPname.getText().toString(),addPrice.getText().length(),addWeight.getText().length(),addDate.getText().length(),addDes.getText().toString());
+            Products products = new Products(addPD.getText().toString(),addPname.getText().toString(),Integer.parseInt(addPrice.getText().toString()),Integer.parseInt(addWeight.getText().toString()),addDate.getText().toString(),addDes.getText().toString());
             if(pro_edit == null)
             {
                 daoProducts.add(products).addOnSuccessListener(suc ->

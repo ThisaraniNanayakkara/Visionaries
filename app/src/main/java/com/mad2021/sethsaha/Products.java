@@ -14,12 +14,12 @@ public class Products implements Serializable {
     private String pname;
     private int price;
     private int weight;
-    private int edate;
+    private String edate;
     private String des;
 
     public Products(){}
 
-    public Products(String ID, String pname, int price, int weight, int edate, String des) {
+    public Products(String ID, String pname, int price, int weight, String edate, String des) {
         this.ID = ID;
         this.pname = pname;
         this.price = price;
@@ -60,11 +60,11 @@ public class Products implements Serializable {
         this.weight = weight;
     }
 
-    public int getEdate() {
+    public String getEdate() {
         return edate;
     }
 
-    public void setEdate(int edate) {
+    public void setEdate(String edate) {
         this.edate = edate;
     }
 
