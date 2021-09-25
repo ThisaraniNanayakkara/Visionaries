@@ -446,7 +446,7 @@
         app:layout_constraintStart_toEndOf="@+id/grand_total" />
 
     <Button
-        android:id="@+id/cart_checkout"
+        android:id="@+id/cart_back"
         android:layout_width="272dp"
         android:layout_height="50dp"
         android:layout_marginBottom="16dp"
@@ -458,12 +458,12 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/cart_back"
+        android:id="@+id/cart_pay"
         android:layout_width="272dp"
         android:layout_height="50dp"
         android:text="@string/checkout"
         app:backgroundTint="@color/top_tab_color"
-        app:layout_constraintBottom_toTopOf="@+id/cart_checkout"
+        app:layout_constraintBottom_toTopOf="@+id/cart_back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />

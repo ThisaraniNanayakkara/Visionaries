@@ -63,7 +63,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.338"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <ImageView
         android:id="@+id/img_search"
@@ -152,7 +153,7 @@
         app:layout_constraintTop_toBottomOf="@+id/bar_top" />
 
     <Button
-        android:id="@+id/cart_checkout"
+        android:id="@+id/cart_back"
         android:layout_width="272dp"
         android:layout_height="50dp"
         android:layout_marginBottom="4dp"
@@ -164,12 +165,12 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/cart_back"
+        android:id="@+id/cart_pay"
         android:layout_width="272dp"
         android:layout_height="50dp"
         android:text="@string/spayment_pay"
         app:backgroundTint="@color/top_tab_color"
-        app:layout_constraintBottom_toTopOf="@+id/cart_checkout"
+        app:layout_constraintBottom_toTopOf="@+id/cart_back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent" />
@@ -245,25 +246,14 @@
         app:layout_constraintTop_toBottomOf="@+id/cpayment_title" />
 
     <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="56dp"
-        android:text="@string/cards_type"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintStart_toStartOf="@+id/first_box2" />
-
-    <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginBottom="12dp"
         android:text="@string/cname"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/card_expiry2"
+        app:layout_constraintBottom_toTopOf="@+id/cName"
         app:layout_constraintEnd_toEndOf="@+id/first_box2" />
 
     <TextView
@@ -310,7 +300,8 @@
         android:inputType="number"
         android:paddingLeft="10dp"
         app:layout_constraintStart_toStartOf="@+id/first_box2"
-        app:layout_constraintTop_toTopOf="@+id/first_box2" />
+        app:layout_constraintTop_toTopOf="@+id/first_box2"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/card_name"
@@ -323,10 +314,11 @@
         android:inputType="text"
         android:paddingLeft="10dp"
         app:layout_constraintStart_toStartOf="@+id/first_box2"
-        app:layout_constraintTop_toTopOf="@+id/first_box2" />
+        app:layout_constraintTop_toTopOf="@+id/first_box2"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <EditText
-        android:id="@+id/card_num3"
+        android:id="@+id/cvv"
         android:layout_width="98dp"
         android:layout_height="36dp"
         android:layout_marginTop="224dp"
@@ -336,7 +328,8 @@
         android:inputType="number"
         android:paddingLeft="10dp"
         app:layout_constraintEnd_toEndOf="@+id/first_box2"
-        app:layout_constraintTop_toTopOf="@+id/first_box2" />
+        app:layout_constraintTop_toTopOf="@+id/first_box2"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/card_expiry"
@@ -349,54 +342,34 @@
         android:inputType="number"
         android:paddingLeft="10dp"
         app:layout_constraintEnd_toEndOf="@+id/first_box2"
-        app:layout_constraintTop_toTopOf="@+id/first_box2" />
+        app:layout_constraintTop_toTopOf="@+id/first_box2"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <EditText
-        android:id="@+id/card_expiry2"
+        android:id="@+id/cName"
         android:layout_width="98dp"
         android:layout_height="36dp"
-        android:layout_marginTop="76dp"
-        android:layout_marginEnd="4dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="148dp"
         android:background="@drawable/blackboxstyle"
         android:ems="10"
         android:inputType="text"
         android:paddingLeft="10dp"
         app:layout_constraintEnd_toEndOf="@+id/first_box2"
-        app:layout_constraintTop_toTopOf="@+id/first_box2" />
+        app:layout_constraintTop_toTopOf="@+id/first_box2"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_save"
         android:layout_width="67dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="308dp"
-        android:layout_marginTop="280dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="276dp"
         android:text="Save"
         android:textSize="10sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/first_box2" />
-
-    <RadioGroup
-        android:layout_width="113dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="44dp"
-        app:layout_constraintStart_toEndOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/cpayment_title">
-
-        <RadioButton
-            android:id="@+id/radioButton3"
-            android:layout_width="86dp"
-            android:layout_height="32dp"
-            android:text="Visa"
-            android:textSize="12sp" />
-
-        <RadioButton
-            android:id="@+id/radioButton5"
-            android:layout_width="86dp"
-            android:layout_height="32dp"
-            android:text="Master Card"
-            android:textSize="12sp" />
-    </RadioGroup>
+        app:layout_constraintTop_toTopOf="@+id/first_box2"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <ImageView
         android:id="@+id/imageView4"

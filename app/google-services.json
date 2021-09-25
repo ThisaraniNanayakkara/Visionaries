@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "569107583677",
+    "project_id": "sethsaha-ba469",
+    "storage_bucket": "sethsaha-ba469.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:569107583677:android:46c428c3a4ad80dc941dd4",
+        "android_client_info": {
+          "package_name": "com.example.sethsahapharmacy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "569107583677-shf7j6p32h2itqfbumq5900263t4s40i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdyJhhapDfNHcfXC0-WzXf_oyGmbOEL5I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "569107583677-shf7j6p32h2itqfbumq5900263t4s40i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

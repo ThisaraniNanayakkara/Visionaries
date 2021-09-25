@@ -44,5 +44,7 @@
     <string name="card_name">Name on Card</string>
     <string name="save_card">Save New Card</string>
     <string name="pay_info">Payment Information</string>
+    <string name="Medicine1">Medicine 1</string>
+    <string name="Price">Price</string>
 
 </resources>

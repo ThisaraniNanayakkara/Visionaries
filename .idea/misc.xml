@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Sakun/Documents/Mad assign/Backups/SethSahaPharmacy v6 all 6 des/app/src/main/res/layout/add_card.xml" value="0.264" />
+        <entry key="..\:/Users/Sakun/Documents/Mad assign/Backups/SethSahaPharmacy v6 all 6 des/app/src/main/res/layout/cart.xml" value="0.21981981981981982" />
+        <entry key="..\:/Users/Sakun/Documents/Mad assign/Backups/SethSahaPharmacy v6 all 6 des/app/src/main/res/layout/fragment_product_detail.xml" value="0.21981981981981982" />
+        <entry key="..\:/Users/Sakun/Documents/Mad assign/Backups/SethSahaPharmacy v6 all 6 des/app/src/main/res/layout/item.xml" value="0.21981981981981982" />
+        <entry key="..\:/Users/Sakun/Documents/Mad assign/Backups/SethSahaPharmacy v6 all 6 des/app/src/main/res/layout/order_confirmation.xml" value="0.21981981981981982" />
+        <entry key="..\:/Users/Sakun/Documents/Mad assign/Backups/SethSahaPharmacy v6 all 6 des/app/src/main/res/layout/order_history.xml" value="0.21981981981981982" />
+        <entry key="..\:/Users/Sakun/Documents/Mad assign/Backups/SethSahaPharmacy v6 all 6 des/app/src/main/res/layout/payment_info.xml" value="0.32899628252788105" />
+        <entry key="..\:/Users/Sakun/Documents/Mad assign/Backups/SethSahaPharmacy v6 all 6 des/app/src/main/res/layout/select_payment.xml" value="0.21981981981981982" />
+        <entry key="..\:/Users/Sakun/Documents/Mad assign/Backups/SethSahaPharmacy v6 all 6 des/app/src/main/res/layout/test.xml" value="0.21981981981981982" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
