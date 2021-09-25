@@ -2,8 +2,8 @@ package com.example.sethsahapharmacy.model;
 
 public class CartModel {
 
-    private String key,name,image;
-    private float price, totalPrice;
+    private String key,name,image, price;
+    private float  totalPrice;
     private int quantity;
 
     public CartModel () {}
@@ -32,11 +32,11 @@ public class CartModel {
         this.image = image;
     }
 
-    public float getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(float price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 

@@ -2,8 +2,7 @@ package com.example.sethsahapharmacy.model;
 
 public class Medicinemodel {
 
-    private String key,name,image;
-    private double price;
+    private String key,name,image, price;
 
     public Medicinemodel () {}
 
@@ -31,11 +30,11 @@ public class Medicinemodel {
         this.image = image;
     }
 
-    public double getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 }
