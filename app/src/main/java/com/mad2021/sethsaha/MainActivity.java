@@ -71,9 +71,9 @@ public class MainActivity extends AppCompatActivity {
                 HashMap<String,Object> hashMap = new HashMap<>();
                 hashMap.put("ProductID",addPD.getText().toString());
                 hashMap.put("Productname",addPname.getText().toString());
-                hashMap.put("ProductPrice",addPrice.getText().length());
-                hashMap.put("Productweight",addWeight.getText().length());
-                hashMap.put("Expiredate",addDate.getText().length());
+                hashMap.put("ProductPrice",Integer.parseInt(addPrice.getText().toString()));
+                hashMap.put("Productweight",Integer.parseInt(addWeight.getText().toString()));
+                hashMap.put("Expiredate",addDate.getText().toString());
                 hashMap.put("Description",addDes.getText().toString());
 
 
