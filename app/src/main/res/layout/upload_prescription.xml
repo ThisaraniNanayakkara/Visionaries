@@ -9,8 +9,6 @@
     tools:context=".UploadPrescription">
 
 
-
-
         <TextView
             android:id="@+id/bar_btm"
             android:layout_width="392dp"
@@ -44,12 +42,13 @@
             app:layout_constraintHorizontal_bias="0.586"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/menu2" />
+            app:srcCompat="@drawable/menu2"
+            tools:ignore="ImageContrastCheck" />
 
         <EditText
             android:id="@+id/bar_search8"
-            android:layout_width="210dp"
-            android:layout_height="48dp"
+            android:layout_width="197dp"
+            android:layout_height="46dp"
             android:layout_marginTop="8dp"
             android:backgroundTint="#00a4d2"
             android:ems="10"
@@ -60,7 +59,6 @@
             android:textAlignment="center"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.612"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -115,7 +113,7 @@
             android:layout_width="164dp"
             android:layout_height="48dp"
             android:layout_marginStart="48dp"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="56dp"
             android:layout_marginEnd="48dp"
             android:backgroundTint="#000000"
             android:ems="10"
@@ -127,14 +125,16 @@
             android:textAlignment="center"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/pills"
-            app:layout_constraintTop_toBottomOf="@+id/bar_top" />
+            app:layout_constraintTop_toBottomOf="@+id/bar_top"
+            tools:ignore="RtlCompat" />
 
         <EditText
             android:id="@+id/no_access"
             android:layout_width="244dp"
             android:layout_height="86dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="44dp"
             android:backgroundTint="#000000"
             android:ems="10"
             android:gravity="start|top"
@@ -146,47 +146,31 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/pills" />
-
-        <EditText
-            android:id="@+id/no_access1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="48dp"
-            android:backgroundTint="#000000"
-            android:ems="10"
-            android:hint="@string/no_access1"
-            android:inputType="textMultiLine"
-            android:outlineProvider="background"
-            android:textAlignment="center"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/btn_upload"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/pills"
+            tools:ignore="RtlCompat" />
 
         <Button
             android:id="@+id/btn_upload"
             android:layout_width="129dp"
             android:layout_height="62dp"
-            android:layout_marginStart="48dp"
-            android:layout_marginBottom="48dp"
+            android:layout_marginBottom="68dp"
             android:background="#FDFFFF"
-            android:backgroundTint="#000000"
+            android:backgroundTint="#FAFAFA"
             android:text="@string/btn_upload"
             android:textColor="#000000"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/bar_btm"
-            app:layout_constraintStart_toStartOf="@+id/no_access1" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="82dp"
             android:layout_height="118dp"
-            android:layout_marginTop="48dp"
-            android:layout_marginBottom="48dp"
-            app:layout_constraintBottom_toTopOf="@+id/no_access1"
+            android:layout_marginTop="20dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/no_access"
             app:srcCompat="@drawable/image" />
@@ -195,13 +179,28 @@
             android:id="@+id/pills"
             android:layout_width="141dp"
             android:layout_height="108dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="24dp"
             android:contentDescription="@string/pills"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/bar_top"
             app:srcCompat="@drawable/metformin" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/selectbtn"
+            android:layout_width="198dp"
+            android:layout_height="58dp"
+            android:backgroundTint="#FBFBFB"
+            android:hint="@string/select"
+            android:text="Choose from gallery"
+            android:textColor="#000000"
+            android:textColorHighlight="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/btn_upload"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:strokeColor="#000000" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
