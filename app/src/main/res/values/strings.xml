@@ -46,5 +46,6 @@
     <string name="pay_info">Payment Information</string>
     <string name="Medicine1">Medicine 1</string>
     <string name="Price">Price</string>
+    <string name="Addcart">Add to Cart</string>
 
 </resources>
