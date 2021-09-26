@@ -22,7 +22,7 @@
 
         <TextView
             android:id="@+id/bar_top"
-            android:layout_width="416dp"
+            android:layout_width="393dp"
             android:layout_height="65dp"
             android:background="#00A4D2"
             app:layout_constraintEnd_toEndOf="parent"
@@ -48,7 +48,7 @@
             android:id="@+id/bar_search8"
             android:layout_width="242dp"
             android:layout_height="48dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="4dp"
             android:backgroundTint="#00a4d2"
             android:ems="10"
             android:gravity="center"
@@ -58,7 +58,7 @@
             android:textAlignment="center"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.612"
+            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -119,13 +119,14 @@
             android:checked="true"
             android:textOff="Edit Profile"
             android:textOn="View Profile"
+            android:onClick = "ViewProfile"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView1" />
 
         <ToggleButton
             android:id="@+id/toggleButton3"
-            android:layout_width="186dp"
-            android:layout_height="50dp"
+            android:layout_width="183dp"
+            android:layout_height="51dp"
             android:layout_marginTop="52dp"
             android:layout_marginEnd="32dp"
             android:backgroundTint="#E6E1E1"
@@ -148,10 +149,10 @@
 
         <TextView
             android:id="@+id/textView1"
-            android:layout_width="282dp"
+            android:layout_width="268dp"
             android:layout_height="45dp"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="36dp"
             android:layout_marginEnd="48dp"
             android:background="#DDDADA"
             android:backgroundTint="#857E7E"
@@ -160,6 +161,7 @@
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/imageView6"
+            app:layout_constraintHorizontal_bias="0.153"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/bar_top" />
 
@@ -167,13 +169,14 @@
             android:id="@+id/button41"
             android:layout_width="265dp"
             android:layout_height="54dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="8dp"
             android:backgroundTint="#FFFFFF"
             android:text="@string/button41"
             android:textAlignment="center"
             android:textColor="#000000"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button31" />
 
@@ -181,7 +184,7 @@
             android:id="@+id/button10"
             android:layout_width="265dp"
             android:layout_height="57dp"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="16dp"
             android:backgroundTint="#FFFFFF"
             android:text="@string/button10"
             android:textAlignment="center"
@@ -195,7 +198,7 @@
             android:id="@+id/button21"
             android:layout_width="267dp"
             android:layout_height="57dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="12dp"
             android:layout_marginBottom="48dp"
             android:backgroundTint="#FFFFFF"
             android:text="@string/button21"
@@ -204,7 +207,7 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/button31"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintHorizontal_bias="0.513"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button10"
             app:layout_constraintVertical_bias="0.452" />
@@ -213,7 +216,7 @@
             android:id="@+id/button31"
             android:layout_width="266dp"
             android:layout_height="55dp"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="12dp"
             android:backgroundTint="#FFFFFF"
             android:text="@string/button31"
             android:textAlignment="center"
@@ -223,6 +226,19 @@
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button21" />
+
+        <Button
+            android:id="@+id/buttonDlt"
+            android:layout_width="256dp"
+            android:layout_height="53dp"
+            android:backgroundTint="#881E2A"
+            android:hint="@string/buttonDlt"
+            android:text="Delete Account"
+            android:onClick = "DeleteAccount"
+            app:layout_constraintBottom_toTopOf="@+id/bar_btm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button41" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
