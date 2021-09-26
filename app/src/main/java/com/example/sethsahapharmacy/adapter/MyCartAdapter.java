@@ -52,7 +52,7 @@ public class MyCartAdapter extends RecyclerView.Adapter<MyCartAdapter.MyCartView
         holder.txt_Name.setText(new StringBuilder().append(cartModelList.get(position).getName()));
         holder.txt_qty.setText(new StringBuilder().append(cartModelList.get(position).getQuantity()));
 
-        //Event
+        //Events
         holder.p1_minus.setOnClickListener(v ->{
             minusCartItem(holder,cartModelList.get(position));
         });

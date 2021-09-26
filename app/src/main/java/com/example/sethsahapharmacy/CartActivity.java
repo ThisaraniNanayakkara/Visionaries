@@ -128,6 +128,6 @@ public class CartActivity extends AppCompatActivity implements IcartLoadListner 
 
     @Override
     public void onCartLoadFailed(String message) {
-//        Snackbar.make(mainLayout,message,Snackbar.LENGTH_LONG).show();
+
     }
 }
