@@ -9,6 +9,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.HashMap;
+
 public class add_card extends AppCompatActivity {
 
     @Override
@@ -33,10 +35,22 @@ public class add_card extends AppCompatActivity {
 
            Cardstore cardstore = new Cardstore(cName.getText().toString(), Integer.parseInt(card_num.getText().toString()), Integer.parseInt(card_expiry.getText().toString()),card_name.getText().toString(),Integer.parseInt(cvv.getText().toString()));
            cardcruds.add(cardstore).addOnSuccessListener(suc ->{
-               Toast.makeText(this,"Record in",Toast.LENGTH_SHORT).show();
+               Toast.makeText(this,"Record Saved",Toast.LENGTH_SHORT).show();
            }).addOnFailureListener(er ->{
                Toast.makeText(this,""+er.getMessage(), Toast.LENGTH_SHORT).show();
            });
+
+           Cardcruds.remove( "-MkM5eV6xPkLfoAYO2C0").addOnSuccessListener(suc ->
+           {
+
+               Toast.makeText(this, "Record is deleted", Toast.LENGTH_SHORT).show();
+
+           }).addOnFailureListener(er->
+           {
+               Toast.makeText(this, ""+er.getMessage(), Toast.LENGTH_SHORT).show();
+           });
+
+
        });
 
 

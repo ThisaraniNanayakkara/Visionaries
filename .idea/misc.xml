@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Sakun/Documents/Mad assign/Backups/SethSahaPharmacy v6 all 6 des 26 sep 21 3.00am/app/src/main/res/layout/activity_cart.xml" value="0.21981981981981982" />
+        <entry key="..\:/Users/Sakun/Documents/Mad assign/Backups/SethSahaPharmacy v6 all 6 des 26 sep 21 3.00am/app/src/main/res/layout/add_card.xml" value="0.21981981981981982" />
+        <entry key="..\:/Users/Sakun/Documents/Mad assign/Backups/SethSahaPharmacy v6 all 6 des 26 sep 21 3.00am/app/src/main/res/layout/buy.xml" value="0.21981981981981982" />
+        <entry key="..\:/Users/Sakun/Documents/Mad assign/Backups/SethSahaPharmacy v6 all 6 des 26 sep 21 3.00am/app/src/main/res/layout/cart.xml" value="0.2" />
+        <entry key="..\:/Users/Sakun/Documents/Mad assign/Backups/SethSahaPharmacy v6 all 6 des 26 sep 21 3.00am/app/src/main/res/layout/layout_cart_item.xml" value="0.264" />
+        <entry key="..\:/Users/Sakun/Documents/Mad assign/Backups/SethSahaPharmacy v6 all 6 des 26 sep 21 3.00am/app/src/main/res/layout/payment_info.xml" value="0.21981981981981982" />
         <entry key="..\:/Users/Sakun/Documents/Mad assign/Backups/SethSahaPharmacy v6 all 6 des/app/src/main/res/layout/add_card.xml" value="0.264" />
         <entry key="..\:/Users/Sakun/Documents/Mad assign/Backups/SethSahaPharmacy v6 all 6 des/app/src/main/res/layout/buy.xml" value="0.2" />
         <entry key="..\:/Users/Sakun/Documents/Mad assign/Backups/SethSahaPharmacy v6 all 6 des/app/src/main/res/layout/cart.xml" value="0.21981981981981982" />
@@ -28,7 +34,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.2598533455545371" />
+        <option name="scale" value="0.264" />
       </ProjectState>
     </option>
   </component>

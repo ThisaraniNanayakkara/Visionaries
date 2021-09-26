@@ -194,6 +194,16 @@
                 app:layout_constraintTop_toBottomOf="@+id/p1_bin"
                 app:srcCompat="@drawable/trash" />
 
+            <ImageView
+                android:id="@+id/p1_bin3"
+                android:layout_width="39dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="96dp"
+                app:layout_constraintStart_toEndOf="@+id/num_qty3"
+                app:layout_constraintTop_toBottomOf="@+id/p1_bin2"
+                app:srcCompat="@drawable/trash" />
+
             <TextView
                 android:id="@+id/text_qty"
                 android:layout_width="wrap_content"
@@ -298,6 +308,24 @@
                 app:layout_constraintTop_toBottomOf="@+id/img_nappy"
                 app:layout_constraintVertical_bias="0.469" />
 
+            <EditText
+                android:id="@+id/num_qty3"
+                android:layout_width="57dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/qnty_style"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/p3_hint"
+                android:inputType="number"
+                android:textColorHint="#0E0D0D"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView13"
+                app:layout_constraintStart_toEndOf="@+id/text_qty3"
+                app:layout_constraintTop_toTopOf="@+id/imageView13"
+                app:layout_constraintVertical_bias="0.869" />
+
             <ImageView
                 android:id="@+id/p1_plus"
                 android:layout_width="33dp"
@@ -329,6 +357,16 @@
                 app:srcCompat="@drawable/plus" />
 
             <ImageView
+                android:id="@+id/p3_plus"
+                android:layout_width="33dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="92dp"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintBottom_toTopOf="@+id/num_qty3"
+                app:layout_constraintStart_toEndOf="@+id/imageView13"
+                app:srcCompat="@drawable/plus" />
+
+            <ImageView
                 android:id="@+id/p2_minus"
                 android:layout_width="29dp"
                 android:layout_height="27dp"
@@ -338,11 +376,21 @@
                 app:layout_constraintTop_toBottomOf="@+id/text_qty2"
                 app:srcCompat="@drawable/minus" />
 
+            <ImageView
+                android:id="@+id/p3_minus"
+                android:layout_width="33dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="@+id/text_qty3"
+                app:layout_constraintTop_toBottomOf="@+id/num_qty3"
+                app:srcCompat="@drawable/minus" />
+
             <TextView
                 android:id="@+id/txt_Name"
                 android:layout_width="114dp"
                 android:layout_height="26dp"
-                android:text="Nappy"
+                android:text="Name"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="@+id/img_nappy"
                 app:layout_constraintEnd_toStartOf="@+id/text_qty"
@@ -355,11 +403,11 @@
                 android:id="@+id/textView12"
                 android:layout_width="114dp"
                 android:layout_height="26dp"
-                android:text="Facia"
+                android:text="Name"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView12"
                 app:layout_constraintEnd_toStartOf="@+id/text_qty2"
-                app:layout_constraintHorizontal_bias="0.941"
+                app:layout_constraintHorizontal_bias="0.294"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/img_nappy"
                 app:layout_constraintVertical_bias="0.0" />
@@ -368,7 +416,7 @@
                 android:id="@+id/txt_Price"
                 android:layout_width="83dp"
                 android:layout_height="39dp"
-                android:hint="Rs. 250"
+                android:hint="Price"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toTopOf="@+id/p1_bin"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -379,7 +427,7 @@
                 android:id="@+id/txt_Price2"
                 android:layout_width="83dp"
                 android:layout_height="39dp"
-                android:hint="Rs. 300"
+                android:hint="Price"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toTopOf="@+id/p1_bin2"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -390,6 +438,21 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
+
+    <TextView
+        android:id="@+id/subtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/subtotal"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/bar_btm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollview"
+        app:layout_constraintVertical_bias="0.135" />
 
     <TextView
         android:id="@+id/grand_total"
@@ -407,15 +470,29 @@
         app:layout_constraintVertical_bias="0.358" />
 
     <EditText
+        android:id="@+id/num1"
+        android:layout_width="59dp"
+        android:layout_height="17dp"
+        android:background="@null"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Rs. 560"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/subtotal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toEndOf="@+id/subtotal" />
+
+    <EditText
         android:id="@+id/num2"
-        android:layout_width="86dp"
-        android:layout_height="40dp"
+        android:layout_width="63dp"
+        android:layout_height="15dp"
         android:layout_marginStart="96dp"
         android:background="@null"
         android:ems="10"
         android:inputType="number"
-        android:text="Rs. 550"
-        android:textSize="20sp"
+        android:text="Rs. 560"
+        android:textSize="12sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/grand_total"
         app:layout_constraintStart_toEndOf="@+id/grand_total"
         tools:ignore="TouchTargetSizeCheck" />
