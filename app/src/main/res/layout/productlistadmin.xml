@@ -33,10 +33,9 @@
         android:layout_width="30dp"
         android:layout_height="36dp"
         android:layout_marginStart="52dp"
-        android:layout_marginTop="16dp"
         app:layout_constraintStart_toEndOf="@+id/imageView22"
-        app:layout_constraintTop_toBottomOf="@+id/imageView12"
-        app:srcCompat="@drawable/trash" />
+        app:srcCompat="@drawable/trash"
+        tools:layout_editor_absoluteY="484dp" />
 
     <TextView
         android:id="@+id/textView"
@@ -206,10 +205,9 @@
         android:layout_width="30dp"
         android:layout_height="36dp"
         android:layout_marginStart="52dp"
-        android:layout_marginTop="12dp"
         app:layout_constraintStart_toEndOf="@+id/imageView24"
-        app:layout_constraintTop_toBottomOf="@+id/imageView17"
-        app:srcCompat="@drawable/trash" />
+        app:srcCompat="@drawable/trash"
+        tools:layout_editor_absoluteY="480dp" />
 
     <ImageView
         android:id="@+id/imageView22"
@@ -236,10 +234,9 @@
         android:layout_width="31dp"
         android:layout_height="32dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
         app:layout_constraintStart_toEndOf="@+id/imageView23"
-        app:layout_constraintTop_toBottomOf="@+id/imageView12"
-        app:srcCompat="@drawable/edit" />
+        app:srcCompat="@drawable/edit"
+        tools:layout_editor_absoluteY="484dp" />
 
     <Button
         android:id="@+id/add_btn"
@@ -248,7 +245,7 @@
         android:layout_marginStart="88dp"
         android:text="@string/btnadd_new_products"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+        tools:layout_editor_absoluteY="311dp" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -261,26 +258,6 @@
         app:srcCompat="@drawable/fishoil" />
 
     <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="56dp"
-        android:layout_height="73dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="12dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
-        app:layout_constraintTop_toBottomOf="@+id/textView11"
-        app:srcCompat="@drawable/fishoil" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="56dp"
-        android:layout_height="73dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="12dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
-        app:layout_constraintTop_toBottomOf="@+id/textView11"
-        app:srcCompat="@drawable/fishoil" />
-
-    <ImageView
         android:id="@+id/imageView8"
         android:layout_width="56dp"
         android:layout_height="73dp"
@@ -288,26 +265,6 @@
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12"
-        app:srcCompat="@drawable/fishoil" />
-
-    <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="56dp"
-        android:layout_height="73dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="36dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView8"
-        app:layout_constraintTop_toBottomOf="@+id/add_btn"
-        app:srcCompat="@drawable/fishoil" />
-
-    <ImageView
-        android:id="@+id/imageView17"
-        android:layout_width="56dp"
-        android:layout_height="73dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="36dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView12"
-        app:layout_constraintTop_toBottomOf="@+id/add_btn"
         app:srcCompat="@drawable/fishoil" />
 
     <Button
@@ -351,5 +308,23 @@
         android:textSize="8sp"
         app:layout_constraintStart_toEndOf="@+id/button14"
         app:layout_constraintTop_toBottomOf="@+id/imageView26" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="81dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:srcCompat="@drawable/prescriptions"
+        tools:layout_editor_absoluteX="292dp" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="81dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintTop_toBottomOf="@+id/add_btn"
+        app:srcCompat="@drawable/prescriptions"
+        tools:layout_editor_absoluteX="284dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
