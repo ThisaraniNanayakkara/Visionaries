@@ -12,7 +12,7 @@ public class ProductVH extends RecyclerView.ViewHolder {
         super(itemView);
         txt_id = itemView.findViewById(R.id.txt_id);
         txt_name = itemView.findViewById(R.id.txt_name);
-//        txt_price = itemView.findViewById(R.id.txt_price);
+
         txt_option = itemView.findViewById(R.id.txt_option);
     }
 }
